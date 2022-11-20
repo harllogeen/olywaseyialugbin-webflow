@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root {
+    --green: #27ae60;
+    /* --light-color: rgb(160, 15, 15); */
+    --bg-color: #e6e6e6;
+    --border: .1rem solid rgba(0, 0, 0, .2);
+    --box-shadow: .4rem .4rem 1rem #ccc, -.4rem -.4rem 1rem #fff;
+    --box-shadow-inset: .4rem .4rem 1rem #ccc inset, -.4rem -.4rem 1rem #fff inset;
+    --green: #16a085;
+    --black: #000000;
+    --white: #fff;
+    --light-color: rgb(65, 51, 51);
+    --wc-green: #7ad03a;
+    --wc-red: #a00;
+    --wc-orange: #ffba00;
+    --wc-purple: #972EA9;
+    --wc-light-blue: #0a0a83;
+    --wc-blue: #2ea2cc;
+    --wc-primary: #810549;
+    --wc-primary-text: #fff;
+    --text-shadow: .4rem .4rem 0 rgba(236, 152, 152, 0.2);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-color);
+    padding-left: 30rem;
+    overflow-x: hidden;
+}
+
+body.active {
+    --black: #fff;
+    --light-color: rgb(248, 227, 227);
+    --bg-color: #222;
+    --wc-light-blue: #2ea2cc;
+    /* --wc-light-blue: #fff; */
+    --border: .1rem solid rgba(0, 0, 0, .4);
+    --box-shadow: .4rem .4rem 1rem #111, -.4rem -.4rem 1rem #333;
+    --box-shadow-inset: .4rem .4rem 1rem #111 inset, -.4rem -.4rem 1rem #333 inset;
+}
+.text-color {
+  color: red;
+}
+.text-cyan {
+  color: #2ea2cc;
+}
+.blue {
+  color: blue;
+}
+
+section {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--black);
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.heading span {
+  color: var(--wc-light-blue);
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  padding-left: 1rem;
+  border-right: .5rem;
+  box-shadow: var(--box-shadow);
+  color: var(--wc-light-blue);
+  cursor: pointer;
+  font-size: 1.5rem;
+  background: none;
+}
+
+.btn span {
+  padding: .7rem 1rem;
+  border-radius: .5rem;
+  background: var(--wc-light-blue);
+  color: #fff;
+  margin-left: .5rem;
+}
+
+.btn:hover {
+  color: var(--wc-light-blue);
+  box-shadow: var(--box-shadow-inset);
+}
+
+.btn:hover span {
+  color: var(--wc-blue);
+  background: #fff;
+  margin-left: 1rem;
+}
+
+#menu-btn {
+  position: fixed;
+  top: 1.5rem;
+  left: 2rem;
+  z-index: 1000;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  color: var(--black);
+  background: var(--bg-color);
+  display: none;
+}
+#menu-btn .actt {
+  padding-top: 1rem;
+}
+#menu-btn .times {
+  padding-top: 1rem;
+}
+
+#menu-btn:hover {
+  color: var(--wc-purple);
+  box-shadow: var(--box-shadow-inset);
+}
+
+#theme-toggler {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1000;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  color: var(--black);
+  background: var(--bg-color);
+  /* display: none; */
+}
+
+#theme-toggler:hover {
+  color: var(--wc-light-blue);
+  box-shadow: var(--box-shadow-inset);
+}
+
+@media(max-width:768px) {
+  html {
+      font-size: 50%;
+  }
+  body {
+      padding-left: 0;
+  }
+  .header {
+      left: -110%;
+  }
+  .mobileHeader {
+    left: 0%;
+  }
+  .header.active {
+      left: 0%;
+      transition: .6s ease-out;
+  }
+  #menu-btn {
+      display: initial;
+  }
+}
+
+@media(max-width:425px) {
+  html {
+      font-size: 50%;
+  }
+  .header {
+      width: 100%;
+      border-radius: 0%;
+  }
+  #home h3 {
+      font-size: 2.6rem;
+  }
+  .about .row .box-container {
+      flex: 1 1 40rem;
+      display: block;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+  }
+  #home {
+      margin-top: -4rem;
+  }
+}

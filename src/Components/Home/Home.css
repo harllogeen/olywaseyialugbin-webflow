@@ -1,0 +1,71 @@
+.home {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+}
+
+.home #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home .content p {
+    font-size: 1.8rem;
+    color: var(--wc-light-blue);
+    padding-bottom: .5rem;
+}
+
+
+.home .share {
+    position: relative;
+    top: 5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+
+.home .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: var(--box-shadow);
+    margin: .4rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.home .share a:hover {
+    color: var(--white);
+}
+
+.home .share a.active,
+.home .share a:hover {
+    background: var(--wc-light-blue);
+    border-radius: .5rem;
+    transition: .5s;
+    padding: 1rem 2rem;
+    color: var(--black);
+}

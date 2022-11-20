@@ -1,0 +1,101 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: var(--bg-color);
+    width: 30rem;
+    border-right: var(--border);
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+.mobileNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: var(--bg-color);
+    width: 30rem;
+    border-right: var(--border);
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header .user {
+    width: 100%;
+}
+
+.header .user img {
+    margin: 2.5rem 0;
+    border: 1rem solid transparent;
+    border-radius: 50%;
+    height: 13rem;
+    box-shadow: var(--box-shadow);
+    width: 13rem;
+}
+
+
+.home .common img {
+    margin: 1rem 0;
+    border: 1rem solid transparent;
+    border-radius: 50%;
+    height: 16rem;
+    box-shadow: var(--box-shadow);
+    width: 16rem;
+}
+
+.header .user h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    text-shadow: var(--text-shadow);
+}
+
+.header .user p {
+    color: var(--wc-light-blue);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.header .user p.active {
+    color: var(--wc-orange);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.header .navbar {
+    padding-top: 1rem;
+}
+.header .mobileNavbar {
+    padding-top: 4rem;
+}
+
+.header .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    box-shadow: var(--box-shadow);
+    color: var(--black);
+}
+.header .mobileNavbar a {
+    display: block;
+    margin: 1rem 0;
+    padding: .6rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--black);
+}
+
+
+.header .navbar a:hover {
+    box-shadow: var(--box-shadow-inset);
+    color: var(--wc-light-blue);
+}
+.header .mobileNavbar a:hover {
+    box-shadow: var(--box-shadow-inset);
+    color: var(--wc-light-blue);
+}

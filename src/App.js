@@ -6,7 +6,7 @@ import Services from "./Components/Services/Services";
 import Project from "./Components/Project/Project";
 import { Contact } from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
-import ParticleBackground  from "./Components/ParticleBackground/ParticleBackground";
+
 
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
       <Sidebar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/particle"  element={<ParticleBackground />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/projects" element={<Project />} />

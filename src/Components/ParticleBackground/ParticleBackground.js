@@ -4,15 +4,15 @@ import Particles from 'react-tsparticles'
 
 const ParticleBackground = () => {
 
-  return (
-    <div>
-        <h1>ParticleBackground</h1>
-        <Particles options={{
-            background: {
-                color: "#0e387a",
+    return (
+        <div>
+            <h1>ParticleBackground</h1>
+            <Particles options={{
+                background: {
+                    color: "#0e387a",
                 },
                 fpsLimit: 60,
-                interactivity:  {
+                interactivity: {
                     detectsOn: "canvas",
                     events: {
                         resize: true
@@ -54,9 +54,9 @@ const ParticleBackground = () => {
                         value: 1,
                     }
                 }
-        }} />
-    </div>
-  )
+            }} />
+        </div>
+    )
 }
 
 export default ParticleBackground

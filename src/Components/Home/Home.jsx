@@ -25,7 +25,7 @@ const Home = () => {
 
     return (
 
-        <div>
+        <div name="home">
             <Sidebar />
             <div>
                 <section className="home" id="home">
@@ -43,7 +43,7 @@ const Home = () => {
 
 
 
-                    <div onClick={themeToggler} id="theme-toggler" className={`${classActive ? "fas fa-moon" : "fas fa-sun"} `}></div>
+                    <div onClick={themeToggler} id="theme-toggler" ></div>
 
                     <div class="share">
 

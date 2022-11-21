@@ -7,6 +7,7 @@ import BOOTSTRAP from '../Image/BOOTSTRAP.png'
 import javascript from '../Image/javascript.png'
 import typescript from '../Image/typescript.png'
 import REACT from '../Image/REACT.png'
+
 import jira from '../Image/jira.png'
 
 const About = () => {

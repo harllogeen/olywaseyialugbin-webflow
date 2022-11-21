@@ -9,6 +9,7 @@ import typescript from '../Image/typescript.png'
 import REACT from '../Image/REACT.png'
 
 import jira from '../Image/jira.png'
+import { NavLink } from 'react-router-dom'
 
 const About = () => {
     return (
@@ -24,7 +25,7 @@ const About = () => {
                             and Node; plus modern libraries and frameworks. Passionate about usability and possess working
                             knowledge of Figma Designs..</p>
 
-                        <a href="#contact" className="btn"> Contact Me <span className="fas fa-chevron-right"></span> </a>
+                        <NavLink to="/contact" className="btn"> Contact Me <span className="fas fa-chevron-right"></span> </NavLink>
                     </div>
 
                     <div className="box-container">

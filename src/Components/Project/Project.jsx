@@ -2,7 +2,7 @@ import React from 'react'
 import './Project.css';
 import '../../index.css'
 import project1 from '../Image/project1.jpg'
-import project2 from '../Image/project2.jpg'
+import project2 from '../Image/cloud.png'
 import project3 from '../Image/project3.jpg'
 import project4 from '../Image/project4.jpg'
 
@@ -25,7 +25,7 @@ const Project = () => {
                     <div className="box" >
                         <img src={project2} alt="project2" />
                         <div className="content">
-                            <a href=" http://gamma-health-project-nine.vercel.app/" target="_blank" rel="noreferrer">
+                            <a href="https://vercel.com/harllogeen/cloud-management" target="_blank" rel="noreferrer">
                                 <h3>project 02</h3>
                             </a>
                         </div>

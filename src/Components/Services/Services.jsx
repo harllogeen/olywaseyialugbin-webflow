@@ -11,7 +11,7 @@ const Services = () => {
 
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <h3>Web Design</h3>
+                        <h3>Web Development</h3>
                         <p>This aspect refer to the designing of websites that are displayed on the internet. It usually
                             refers to the user experience aspects of website development rather than software development.
                         </p>
@@ -19,7 +19,7 @@ const Services = () => {
 
                     <div class="box">
                         <i class="fas fa-mobile"></i>
-                        <h3>Responsive Design</h3>
+                        <h3>Responsive Web Design</h3>
                         <p>Responsive web design is a web development approach that creates dynamic changes to the
                             appearance of a website, depending on the screen size and orientation of the device being used
                             to view it.</p>

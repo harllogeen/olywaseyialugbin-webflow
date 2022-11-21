@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./About.css"
 import '../../index.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import html from "../Image/html.png"
 import css from '../Image/css.png'
 import BOOTSTRAP from '../Image/BOOTSTRAP.png'
 import javascript from '../Image/javascript.png'
 import typescript from '../Image/typescript.png'
 import REACT from '../Image/REACT.png'
-
 import jira from '../Image/jira.png'
 import { NavLink } from 'react-router-dom'
 
 const About = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000
+        });
+    }, []);
     return (
         <div>
-            <section className="about" id="about">
+            <section className="about" id="about"  data-aos="fade-down">
                 <h1 className="heading"> <span>About</span> Me</h1>
 
                 <div className="row">
@@ -29,7 +35,7 @@ const About = () => {
                     </div>
 
                     <div className="box-container">
-                        <div className="box">
+                        <div className="box" data-aos="flip-up">
                             <img src={html} alt="html" className="mytypescript1" />
 
                             <div className="progress">
@@ -37,7 +43,7 @@ const About = () => {
                                 <div className="bar bar-2-1"><span></span></div>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box" data-aos="flip-down">
                             <img src={css} alt="css" />
 
                             <div className="progress">
@@ -46,7 +52,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="flip-up">
                             <img src={BOOTSTRAP} alt="bootstrap" />
 
                             <div className="progress">
@@ -73,7 +79,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="flip-up">
                             <img src={REACT} alt="REACT" className="mytypescrip2" width="30%" />
 
                             <div className="progress">
@@ -81,7 +87,7 @@ const About = () => {
                                 <div className="bar bar-2-6"><span></span></div>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box" data-aos="fade-up-right">
                             <img src={jira} alt="jira" className="mytypescrip2" width="30%" />
 
                             <div className="progress">
@@ -89,14 +95,6 @@ const About = () => {
                                 <div className="bar bar-2-6"><span></span></div>
                             </div>
                         </div>
-                        {/* <div className="box">
-                            <img src={NODE} alt="NODE" className="mytypescrip2" width="30%" />
-
-                            <div className="progress">
-                                <h3> NODE JS <span>50%</span> </h3>
-                                <div className="bar bar-2-7"><span></span></div>
-                            </div>
-                        </div> */}
 
                     </div>
                 </div>

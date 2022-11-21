@@ -7,7 +7,6 @@ import BOOTSTRAP from '../Image/BOOTSTRAP.png'
 import javascript from '../Image/javascript.png'
 import typescript from '../Image/typescript.png'
 import REACT from '../Image/REACT.png'
-import NODE from '../Image/NODE.png'
 import jira from '../Image/jira.png'
 
 const About = () => {
@@ -88,14 +87,14 @@ const About = () => {
                                 <div className="bar bar-2-6"><span></span></div>
                             </div>
                         </div>
-                        <div className="box">
+                        {/* <div className="box">
                             <img src={NODE} alt="NODE" className="mytypescrip2" width="30%" />
 
                             <div className="progress">
                                 <h3> NODE JS <span>50%</span> </h3>
                                 <div className="bar bar-2-7"><span></span></div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
